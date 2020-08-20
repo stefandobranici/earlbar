@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "./Carousel.scss";
+
+import Home from "./pages/Home.js";
+import TheEarl from "./pages/TheEarl.js";
+import TheTerrace from "./pages/TheTerrace.js";
+import Gallery from "./pages/Gallery.js";
+import ContactUs from "./pages/ContactUs.js";
+import Error from "./pages/Error.js";
+
+import Navbar from "./components/Navbar";
+
+import { Route, Switch } from "react-router-dom";
+
+import Carousel from "./components/carousel/Carousel";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/the-earl/" component={TheEarl} />
+        <Route exact path="/the-terrace/" component={TheTerrace} />
+        <Route exact path="/gallery/" component={Gallery} />
+        <Route exact path="/contact-us/" component={ContactUs} />
+        <Route component={Error} />
+      </Switch>
+    </>
   );
 }
 
