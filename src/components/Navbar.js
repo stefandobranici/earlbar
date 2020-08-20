@@ -33,7 +33,16 @@ export default class Navbar extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/the-earl/">The Earl Terrace</Link>
+              <Link to="/the-earl/">The Earl Cocktail Bar</Link>
+            </li>
+            <li>
+              <Link to="/the-terrace/">The Terrace Shisha Bar</Link>
+            </li>
+            <li>
+              <Link to="/gallery/">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/contact-us/">Contact Us</Link>
             </li>
           </ul>
         </div>
