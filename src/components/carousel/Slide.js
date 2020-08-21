@@ -72,7 +72,7 @@ export default function Slide({ slide, offset }) {
           <h2 className="slideTitle">{slide.title}</h2>
           <h3 className="slideSubtitle">{slide.subtitle}</h3>
           <p className="slideDescription">{slide.description}</p>
-          <button type="button" className="btn-primary btn-carousel">
+          <button type="button" className="btn-primary-main btn-carousel">
             BOOK NOW
           </button>
         </div>

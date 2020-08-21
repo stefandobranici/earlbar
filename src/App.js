@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./Carousel.scss";
 
@@ -10,6 +11,8 @@ import ContactUs from "./pages/ContactUs.js";
 import Error from "./pages/Error.js";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import VisitUs from "./components/VisitUs";
 
 import { Route, Switch } from "react-router-dom";
 
@@ -25,6 +28,8 @@ function App() {
         <Route exact path="/contact-us/" component={ContactUs} />
         <Route component={Error} />
       </Switch>
+      <VisitUs />
+      <Footer />
     </>
   );
 }

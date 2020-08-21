@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+*:focus {
+  outline: none !important;
+}
+
 :root {
   --primaryColor: #af9a7d;
   --mainWhite: #fff;
@@ -70,7 +74,7 @@ h6 {
   margin-bottom: 1.5em;
 }
 
-.btn-primary {
+.btn-primary-main {
   display: inline-block;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
@@ -83,7 +87,7 @@ h6 {
   cursor: pointer;
   font-size: 1em;
 }
-.btn-primary:hover {
+.btn-primary-main:hover {
   background: black;
   color: var(--primaryColor);
 }
@@ -108,11 +112,12 @@ h6 {
 /* Navbar */
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0 !important;
+  left: 0 !important;
+  padding-top: 0rem !important;
+  padding-left: 0px !important;
   width: 100%;
   height: 80px;
-  padding-right: 2rem;
   background: var(--offWhite);
   z-index: 10;
   background-color: rgb(34, 34, 34);
@@ -120,6 +125,7 @@ h6 {
 .nav-header {
   display: flex;
   justify-content: space-between;
+  padding-right: 2rem;
 }
 .nav-btn {
   background: transparent;
@@ -408,155 +414,118 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 /* end of room  */
-/* single room*/
 
-.single-room {
-  padding: 5rem 0 0 0;
+/* start of homeHeader css*/
+
+.home-header {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-.single-room-images {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 50px;
+
+.home-header p {
+  text-align: left;
+  color: var(--mainBlack);
+  white-space: pre-line;
+  vertical-align: bottom;
 }
-.single-room-images img {
+
+/* end of homeHeader css*/
+
+/* start of visit us css*/
+
+.visit-us-container {
+  height: 30vh;
   width: 100%;
-  display: block;
-}
-.single-room-info {
-  width: 80vw;
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 2rem auto;
-}
-.desc,
-.info {
-  margin: 1rem 0;
-}
-.desc h3 {
-  text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
-}
-.desc p {
-  line-height: 1.5;
-}
-.info h3,
-.info h6 {
-  text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
+  text-align: center;
+  background-color: rgb(34, 34, 34);
 }
 
-.info h6 {
-  font-weight: 300;
-}
-.room-extras {
-  width: 80vw;
-  margin: 0 auto 3rem auto;
-}
-.room-extras h6 {
-  text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
-}
-.extras {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  grid-column-gap: 2rem;
-  grid-row-gap: 1rem;
-}
-@media screen and (min-width: 992px) {
-  .single-room-images,
-  .single-room-info,
-  .room-extras {
-    width: 95vw;
-    max-width: 1170px;
-  }
-  .single-room-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
-  }
-  .info {
-    padding-left: 3rem;
-  }
-}
-/* end of single room*/
-/* roomlist */
-.roomslist {
-  padding: 5rem 0;
-}
-.roomslist-center {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 30px;
-}
-
-@media screen and (min-width: 776px) {
-  .roomslist-center {
-    width: 90vw;
-  }
-}
-@media screen and (min-width: 992px) {
-  .roomslist-center {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
-/* end of roomlist */
-/*  rooms fitler*/
-.filter-container {
-  padding: 5rem 0;
-}
-.filter-form {
-  width: 60vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 40px;
-}
-.form-group {
-  text-transform: capitalize;
-}
-.form-group label {
-  display: block;
-  letter-spacing: var(--mainSpacing);
-  margin-bottom: 0.5rem;
-}
-.form-control {
+.visit-us-inner-content {
+  margin: 0;
   width: 100%;
-  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.visit-us-container h1,
+h2,
+p {
+  color: var(--mainWhite);
+  margin-bottom: 3vh;
+}
+
+.visit-us-container h1 {
+  font-size: 3vh;
+}
+
+.visit-us-container h2 {
+  font-size: 2vh;
+}
+
+.visit-us-container button {
+  height: 5vh;
+  font-size: 1.3vh;
+}
+
+@media screen and (min-width: 1200px) {
+  .visit-us-container {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+  }
+
+  .visit-us-inner-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .visit-us-container h1,
+  h2 {
+    color: var(--mainWhite);
+    margin-bottom: 50px;
+  }
+
+  .visit-us-container button {
+    height: 50px;
+  }
+}
+
+/* end of visit us css*/
+
+/* start of footer css*/
+
+.footer {
+  background-color: var(--primaryColor);
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.footer h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
   font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: var(--mainSpacing);
+  color: white;
 }
-.size-inputs {
-  display: flex;
+
+/* end of footer css*/
+
+/* start of utils css*/
+
+.vertical-line {
+  width: 20%;
+  margin-bottom: 5%;
+  border: 3px solid var(--primaryColor);
 }
-.size-input {
-  width: 40%;
-  padding: 0.2rem;
-  border: 1px solid var(--mainBlack);
-  border-radius: 0.3rem;
-  margin-right: 0.3rem;
-}
-.single-extra label {
-  display: inline-block;
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
-}
-@media screen and (min-width: 776px) {
-  .filter-form {
-    width: 70vw;
-  }
-}
-@media screen and (min-width: 992px) {
-  .filter-form {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
-/* end of rooms fitler*/
