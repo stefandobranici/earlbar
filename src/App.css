@@ -582,3 +582,134 @@ reservation-form-row-select {
   margin-bottom: 20px !important;
 }
 /* end of reservation form css*/
+
+.home-shisha-section {
+  background: url("https://lh3.googleusercontent.com/pw/ACtC-3eI-n0dQ4QwzLOWPSa9yez809eE9ffMffHDzFsx8IzlQcjyKBYeSUcrrZeSo2zcb3yHGQfMdW_3DUc8uPv60IWeMN4WbrTWdCB0qxNKeWQLu9ayxFY1Njq9UxNDFu2M9ixV979mFn5UsWFh57bMN2Pr=w2048-h1366-no?authuser=0")
+    center/cover no-repeat;
+  width: 100%;
+  height: 45vh;
+}
+
+.home-shisha-section-col {
+  text-align: center;
+  background-color: rgba(34, 34, 34, 0.6);
+  margin-top: 15vh;
+  color: var(--mainWhite);
+}
+
+.home-shisha-section-col h1 {
+  padding-top: 3vh;
+  font-size: 2.5vh;
+}
+.home-shisha-section-col p {
+  font-size: 1.3vh;
+}
+
+.vertical-line-banner {
+  width: 20%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 40%;
+  border: 3px solid var(--primaryColor);
+}
+
+.home-prices-section {
+  width: 100%;
+  height: 60vh;
+}
+
+.home-prices-section-col {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.home-prices-section-col h1 {
+  padding-top: 3vh;
+  font-size: 2.5vh;
+}
+.home-prices-section-col p {
+  font-size: 1.3vh;
+  color: var(--mainBlack);
+}
+
+.home-prices-section-col-drinks {
+  text-align: center;
+  background-color: var(--primaryColor);
+  margin-left: 1vw;
+  margin-right: 1vw;
+  height: 20vh;
+}
+
+.home-prices-section-col-drinks h1 {
+  font-size: 2vh;
+  padding-bottom: 1vh;
+}
+
+.home-prices-section-col-drinks h3 {
+  padding-top: 5vh;
+  font-size: 1.8vh;
+}
+
+.home-prices-section-col-drinks h6 {
+  color: var(--darkGrey);
+  font-size: 1.5vh;
+}
+
+@media screen and (min-width: 1200px) {
+  .home-prices-section-col-drinks {
+    height: 23vh;
+  }
+
+  .home-prices-section-col-drinks h1 {
+    font-size: 3vh;
+  }
+
+  .home-prices-section-col-drinks h3 {
+    font-size: 2vh;
+  }
+
+  .home-prices-section-col-drinks h6 {
+    font-size: 1.5vh;
+  }
+}
+
+.home-menu-section {
+  background: url("https://lh3.googleusercontent.com/pw/ACtC-3dq8t-wFHmrBo2a9yCU4sHVLk_aSeRkb81us3RJnit9mRSDWbzLmnfwirZndu9sKHMggiyIWMMJXyyH-E-2W4pfy9B4mrkfg5YaD2zdP7cnQA9-ahYIYbI7cKtcdl3fxcKpuqCEkh54WYdGKx5lFd8W=w2048-h1160-no?authuser=0")
+    center/cover no-repeat;
+  width: 100%;
+  height: 1200px;
+}
+
+@media screen and (min-width: 1200px) {
+  .home-menu-section {
+    height: 60vh;
+  }
+}
+
+.home-menu-section-col {
+  text-align: center;
+  background-color: rgba(34, 34, 34, 0.6);
+  margin-top: 5vh;
+  color: var(--mainWhite);
+}
+
+.home-menu-section-col h1 {
+  padding-top: 3vh;
+  font-size: 2.5vh;
+}
+.home-menu-section-col p {
+  font-size: 1.3vh;
+}
+
+.menu-list {
+  list-style-type: none;
+  text-align: left;
+}
+
+.menu-list-item {
+  padding-bottom: 1vh;
+}
+
+.menu-list-item:hover {
+  color: var(--primaryColor);
+}
