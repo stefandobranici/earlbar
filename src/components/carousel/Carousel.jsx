@@ -14,7 +14,6 @@ export default function Carousel() {
 
         {[...slides, ...slides, ...slides].map((slide, i) => {
           let offset = slides.length + (state.slideIndex - i);
-          console.log(state);
           return <Slide slide={slide} offset={offset} key={i} />;
         })}
         <button onClick={() => dispatch({ type: "NEXT" })}>›</button>

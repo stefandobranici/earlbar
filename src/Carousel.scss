@@ -10,7 +10,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
+  margin-top: 50px;
 }
 
 .slides {
@@ -25,8 +26,8 @@
     border: none;
     color: black;
     position: absolute;
-    font-size: 10rem;
-    width: 5rem;
+    font-size: 10vh;
+    width: 5vh;
     height: 5rem;
     top: 30%;
     transition: opacity 0.3s;
@@ -51,9 +52,12 @@
 }
 
 .btn-carousel {
-  right: -45%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 4vh;
   height: 5vh;
-  margin-top: 1rem;
+  font-size: 1.5vh;
 }
 
 .slide {
@@ -95,7 +99,8 @@
 
   .slideSubtitle,
   .slideTitle {
-    font-size: 1.4vw;
+    text-align: center;
+    font-size: 1.5vh;
     font-weight: normal;
     letter-spacing: 0.2ch;
     text-transform: uppercase;
@@ -110,7 +115,7 @@
 
   .slideDescription {
     text-align: center;
-    font-size: 0.6vw;
+    font-size: 1.2vh;
     letter-spacing: 0.2ch;
     padding-top: 1rem;
     padding-bottom: 1rem;
