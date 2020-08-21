@@ -33,6 +33,12 @@
     transition: opacity 0.3s;
     opacity: 0.7;
     z-index: 5;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     &:hover {
       opacity: 1;
@@ -58,6 +64,12 @@
   margin-top: 4vh;
   height: 5vh;
   font-size: 1.5vh;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .slide {
@@ -99,6 +111,7 @@
 
   .slideSubtitle,
   .slideTitle {
+    padding-top: 10px;
     text-align: center;
     font-size: 1.5vh;
     font-weight: normal;
@@ -107,6 +120,12 @@
     margin: 0;
     padding-left: 2rem;
     background-color: rgba(0, 0, 0, 0.4);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   .slideSubtitle::before {
@@ -115,12 +134,18 @@
 
   .slideDescription {
     text-align: center;
-    font-size: 1.2vh;
+    font-size: 1.4vh;
     letter-spacing: 0.2ch;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.4);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 }
 

@@ -31,19 +31,19 @@ export default class Navbar extends Component {
           <ul
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
           >
-            <li>
+            <li onClick={this.state.isOpen ? this.handleToggle : null}>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li onClick={this.state.isOpen ? this.handleToggle : null}>
               <Link to="/the-earl/">The Earl Cocktail Bar</Link>
             </li>
-            <li>
+            <li onClick={this.state.isOpen ? this.handleToggle : null}>
               <Link to="/the-terrace/">The Terrace Shisha Bar</Link>
             </li>
-            <li>
+            <li onClick={this.state.isOpen ? this.handleToggle : null}>
               <Link to="/gallery/">Gallery</Link>
             </li>
-            <li>
+            <li onClick={this.state.isOpen ? this.handleToggle : null}>
               <Link to="/contact-us/">Contact Us</Link>
             </li>
           </ul>
