@@ -3,6 +3,7 @@ import Carousel from "../components/carousel/Carousel";
 import { Container, Row, Col } from "react-bootstrap";
 import { homePageContent } from "../repository/content";
 import LineBreak from "../components/LineBreak";
+import ReservationForm from "../components/ReservationForm";
 
 export const Home = () => {
   return (
@@ -18,6 +19,9 @@ export const Home = () => {
             <Row>
               <p>{homePageContent.mainHeaderDescription}</p>
             </Row>
+          </Col>
+          <Col md={12} lg={6}>
+            <ReservationForm />
           </Col>
         </Row>
       </Container>
