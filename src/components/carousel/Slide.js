@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 function useTilt(active) {
   const ref = React.useRef(null);
@@ -46,6 +47,12 @@ export default function Slide({ slide, offset }) {
   const active = offset === 0 ? true : null;
   const ref = useTilt(active);
 
+  const history = useHistory();
+
+  const goToBooking = () => {
+    history.push("/contact-us/");
+  };
+
   return (
     <div
       ref={ref}
@@ -72,8 +79,12 @@ export default function Slide({ slide, offset }) {
           <h2 className="slideTitle">{slide.title}</h2>
           <h3 className="slideSubtitle">{slide.subtitle}</h3>
           <p className="slideDescription">{slide.description}</p>
-          <button type="button" className="btn-primary-main btn-carousel">
-            BOOK NOW
+          <button
+            type="button"
+            className="btn-primary-main btn-carousel"
+            onClick={goToBooking}
+          >
+            book now
           </button>
         </div>
       </div>

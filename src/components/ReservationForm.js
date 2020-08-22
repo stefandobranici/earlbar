@@ -84,11 +84,7 @@ export default function ReservationForm() {
           </Row>
           <Row className="justify-content-center reservation-form-row">
             <Col xs={8}>
-              <input
-                type="submit"
-                value="Make a Reservation"
-                className=" btn-primary-main"
-              />
+              <input type="submit" value="BOOK" className=" btn-primary-main" />
             </Col>
           </Row>
         </form>

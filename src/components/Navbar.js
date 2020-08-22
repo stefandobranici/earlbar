@@ -4,12 +4,25 @@ import { FaAlignRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
+  pageNames = {
+    home: "Home",
+    theEarl: "The-Earl",
+    theTerrace: "The-Terrace",
+    gallery: "Gallery",
+    contactUs: "Contact-Us",
+  };
+
   state = {
     isOpen: false,
+    currentActive: this.pageNames.home,
   };
   handleToggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
   };
+  swapPage = (page) => {
+    this.setState({ currentActive: page });
+  };
+
   render() {
     return (
       <nav className="navbar">
@@ -32,19 +45,69 @@ export default class Navbar extends Component {
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
           >
             <li onClick={this.state.isOpen ? this.handleToggle : null}>
-              <Link to="/">Home</Link>
+              <Link
+                className={
+                  this.state.currentActive === this.pageNames.home
+                    ? "nav-links-li-active"
+                    : null
+                }
+                to="/"
+                onClick={() => this.swapPage(this.pageNames.home)}
+              >
+                Home
+              </Link>
             </li>
             <li onClick={this.state.isOpen ? this.handleToggle : null}>
-              <Link to="/the-earl/">The Earl Cocktail Bar</Link>
+              <Link
+                className={
+                  this.state.currentActive === this.pageNames.theEarl
+                    ? "nav-links-li-active"
+                    : null
+                }
+                to="/the-earl/"
+                onClick={() => this.swapPage(this.pageNames.theEarl)}
+              >
+                The Earl Cocktail Bar
+              </Link>
             </li>
             <li onClick={this.state.isOpen ? this.handleToggle : null}>
-              <Link to="/the-terrace/">The Terrace Shisha Bar</Link>
+              <Link
+                className={
+                  this.state.currentActive === this.pageNames.theTerrace
+                    ? "nav-links-li-active"
+                    : null
+                }
+                to="/the-terrace/"
+                onClick={() => this.swapPage(this.pageNames.theTerrace)}
+              >
+                The Terrace Shisha Bar
+              </Link>
             </li>
             <li onClick={this.state.isOpen ? this.handleToggle : null}>
-              <Link to="/gallery/">Gallery</Link>
+              <Link
+                className={
+                  this.state.currentActive === this.pageNames.gallery
+                    ? "nav-links-li-active"
+                    : null
+                }
+                to="/gallery/"
+                onClick={() => this.swapPage(this.pageNames.gallery)}
+              >
+                Gallery
+              </Link>
             </li>
             <li onClick={this.state.isOpen ? this.handleToggle : null}>
-              <Link to="/contact-us/">Contact Us</Link>
+              <Link
+                className={
+                  this.state.currentActive === this.pageNames.contactUs
+                    ? "nav-links-li-active"
+                    : null
+                }
+                to="/contact-us/"
+                onClick={() => this.swapPage(this.pageNames.contactUs)}
+              >
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>

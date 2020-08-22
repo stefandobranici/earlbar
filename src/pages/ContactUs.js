@@ -1,7 +1,12 @@
 import React from "react";
+import ReservationForm from "../components/ReservationForm";
 
 export const ContactUs = () => {
-  return <div>hello from contact us</div>;
+  return (
+    <div>
+      <ReservationForm />
+    </div>
+  );
 };
 
 export default ContactUs;

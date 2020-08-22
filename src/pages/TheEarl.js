@@ -1,8 +1,9 @@
 import React from "react";
-import Hero from "../components/Hero";
+import DrinkMenu from "../components/drink-menu/DrinkMenu";
+import { drinksMenu } from "../repository/menu";
 
 export const TheEarl = () => {
-  return <Hero hero="earlHero"></Hero>;
+  return <DrinkMenu menu={drinksMenu} />;
 };
 
 export default TheEarl;
