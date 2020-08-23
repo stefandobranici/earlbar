@@ -1,6 +1,5 @@
 import React from "react";
 import ReservationForm from "../components/ReservationForm";
-import ContactForm from "../components/ContactForm";
 import { Container, Row, Col } from "react-bootstrap";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
