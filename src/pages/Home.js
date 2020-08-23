@@ -12,7 +12,7 @@ export const Home = () => {
   return (
     <div>
       <Carousel />
-      <Container fluid="md" className="home-header">
+      <Container fluid="lg" className="home-header">
         <Row>
           <Col md={12} lg={7}>
             <Row>

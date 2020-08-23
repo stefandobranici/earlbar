@@ -518,7 +518,6 @@ p {
 
 .footer {
   background-color: var(--primaryColor);
-  height: 220px;
   text-align: center;
 }
 
@@ -557,6 +556,7 @@ p {
 
 .reservation-form {
   background-color: rgb(34, 34, 34);
+
   color: var(--primaryColor);
   text-align: center;
   height: 650px;
