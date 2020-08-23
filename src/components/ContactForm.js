@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
-export default function ReservationForm() {
+export default function ContactForm() {
   return (
     <Container fluid>
       <form className="reservation-form">

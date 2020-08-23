@@ -6,7 +6,7 @@ import LineBreak from "../components/LineBreak";
 import ReservationForm from "../components/ReservationForm";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
-import { GiBottleVapors } from "react-icons/gi";
+import ShishaMenu from "../components/ShishaMenu";
 
 export const Home = () => {
   return (
@@ -89,82 +89,13 @@ export const Home = () => {
             <h6>1 for £3</h6>
           </Col>
           <Col xs={10} md={3} className="home-prices-section-col-drinks">
-            <h3>Hookah</h3>
+            <h3>Shishas</h3>
             <h1>2 Flavours for £14</h1>
             <h6>More flavours at an extra cost</h6>
           </Col>
         </Row>
       </Container>
-      <Container fluid className="home-menu-section">
-        <Row className="justify-content-center">
-          <Col xs={8} className="home-menu-section-col">
-            <h1>Shisha Flavours And Cocktails</h1>
-            <div className="vertical-line-banner"></div>
-            <Row>
-              <h3 style={{ "margin-left": "9vw" }}>
-                <GiBottleVapors style={{ color: "#af9a7d" }} /> Shisha Flavours
-              </h3>
-            </Row>
-            <Row className="justify-content-center">
-              <Col xs={12} md={3}>
-                <ul className="menu-list">
-                  <li className="menu-list-item">Cali Lime</li>
-                  <li className="menu-list-item">Froz Lemon</li>
-                  <li className="menu-list-item">Froz Apple</li>
-                  <li className="menu-list-item">Froz Raspberry</li>
-                  <li className="menu-list-item">Mango</li>
-                </ul>
-              </Col>
-              <Col xs={12} md={3}>
-                <ul className="menu-list">
-                  <li className="menu-list-item">Passion Fruit</li>
-                  <li className="menu-list-item">Mint</li>
-                  <li className="menu-list-item">Blue Mist</li>
-                  <li className="menu-list-item">Strawberry</li>
-                  <li className="menu-list-item">Bubblegum</li>
-                </ul>
-              </Col>
-              <Col xs={12} md={3}>
-                <ul className="menu-list">
-                  <li className="menu-list-item">Watermelon</li>
-                  <li className="menu-list-item">Grape</li>
-                </ul>
-              </Col>
-            </Row>
-            <Row>
-              <h3 style={{ "margin-left": "9vw", "margin-top": "" }}>
-                <GiBottleVapors style={{ color: "#af9a7d" }} /> Shisha Flavours
-              </h3>
-            </Row>
-            <Row className="justify-content-center">
-              <Col xs={12} md={3}>
-                <ul className="menu-list">
-                  <li className="menu-list-item">Cali Lime</li>
-                  <li className="menu-list-item">Froz Lemon</li>
-                  <li className="menu-list-item">Froz Apple</li>
-                  <li className="menu-list-item">Froz Raspberry</li>
-                  <li className="menu-list-item">Mango</li>
-                </ul>
-              </Col>
-              <Col xs={12} md={3}>
-                <ul className="menu-list">
-                  <li className="menu-list-item">Passion Fruit</li>
-                  <li className="menu-list-item">Mint</li>
-                  <li className="menu-list-item">Blue Mist</li>
-                  <li className="menu-list-item">Strawberry</li>
-                  <li className="menu-list-item">Bubblegum</li>
-                </ul>
-              </Col>
-              <Col xs={12} md={3}>
-                <ul className="menu-list">
-                  <li className="menu-list-item">Watermelon</li>
-                  <li className="menu-list-item">Grape</li>
-                </ul>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
+      <ShishaMenu />
     </div>
   );
 };

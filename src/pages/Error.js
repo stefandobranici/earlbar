@@ -1,16 +1,25 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 export default function Error() {
+  const history = useHistory();
+
+  const goToBooking = () => {
+    history.push("/");
+  };
+
   return (
-    <Hero>
-      <Banner title="404" subtitle="page not found">
-        <Link to="/" className="btn-primary-main">
-          Return Home
-        </Link>
-      </Banner>
-    </Hero>
+    <Banner title="404" subtitle="page not found">
+      <button
+        type="button"
+        className="btn-primary-main"
+        onClick={() => goToBooking}
+      >
+        Return Home
+      </button>
+      <div style={{ height: "23vh", backgroundColor: "white" }} />
+    </Banner>
   );
 }

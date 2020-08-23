@@ -37,6 +37,12 @@ body {
   background: var(--mainWhite);
   font-family: Avenir Roman, sans-serif;
   line-height: 1.4;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 h1 {
   font-family: Century Gothic, sans-serif;
@@ -236,15 +242,17 @@ h6 {
 /* Banner */
 .banner {
   display: inline-block;
-  background: rgba(0, 0, 0, 0.5);
   color: var(--mainWhite);
-  padding: 2rem 1rem;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 .banner h1 {
   font-size: 2.5rem;
+  color: var(--mainBlack);
 }
 .banner div {
   width: 10rem;
@@ -255,22 +263,7 @@ h6 {
 .banner p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-}
-@media screen and (min-width: 576px) {
-  .banner {
-    padding: 2rem 3rem;
-  }
-  .banner h1 {
-    font-size: 3rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .banner {
-    padding: 2rem 6rem;
-  }
-  .banner h1 {
-    font-size: 4rem;
-  }
+  color: var(--mainBlack);
 }
 /* End of Banner */
 /* Title */
@@ -605,6 +598,12 @@ reservation-form-row-select {
   background: url("https://lh3.googleusercontent.com/pw/ACtC-3eI-n0dQ4QwzLOWPSa9yez809eE9ffMffHDzFsx8IzlQcjyKBYeSUcrrZeSo2zcb3yHGQfMdW_3DUc8uPv60IWeMN4WbrTWdCB0qxNKeWQLu9ayxFY1Njq9UxNDFu2M9ixV979mFn5UsWFh57bMN2Pr=w2048-h1366-no?authuser=0")
     center/cover no-repeat;
   width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .home-shisha-section-col {
@@ -614,16 +613,34 @@ reservation-form-row-select {
   margin-top: 15vh;
   margin-bottom: 15vh;
   color: var(--mainWhite);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .home-shisha-section-col h1 {
   padding-top: 3vh;
   font-size: 2rem;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .home-shisha-section-col p {
   font-size: 1.5rem;
   white-space: pre-line;
   vertical-align: bottom;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .vertical-line-banner {
@@ -676,43 +693,39 @@ reservation-form-row-select {
   font-size: 1rem;
 }
 
-.home-menu-section {
-  background: url("https://lh3.googleusercontent.com/pw/ACtC-3dq8t-wFHmrBo2a9yCU4sHVLk_aSeRkb81us3RJnit9mRSDWbzLmnfwirZndu9sKHMggiyIWMMJXyyH-E-2W4pfy9B4mrkfg5YaD2zdP7cnQA9-ahYIYbI7cKtcdl3fxcKpuqCEkh54WYdGKx5lFd8W=w2048-h1160-no?authuser=0")
+.shisha-section {
+  background: url("https://lh3.googleusercontent.com/pw/ACtC-3fCVHrl7dsVme1KaBRo0Df0IJUHbzVpUTNUTGbyDjQdgGh_vfPBYHuFOn7h1qVLXTPFZKYo8_H5wZhICp2VJLorqsz7Z3WOQjp5S6aoFmjt3cEsuOIlJjwUr-Gd-qBMT4-JinqLQVbIlaKZsIZz-2MX=w1280-h1175-no?authuser=0")
     center/cover no-repeat;
   width: 100%;
-  height: 1200px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
-@media screen and (min-width: 1200px) {
-  .home-menu-section {
-    height: 60vh;
-  }
-}
-
-.home-menu-section-col {
+.shisha-section-col {
   text-align: center;
   background-color: rgba(34, 34, 34, 0.6);
-  margin-top: 5vh;
   color: var(--mainWhite);
 }
 
-.home-menu-section-col h1 {
+.shisha-section-col h1 {
   padding-top: 3vh;
-  font-size: 2.5vh;
-}
-.home-menu-section-col p {
-  font-size: 1.3vh;
+  font-size: 2rem;
 }
 
-.menu-list {
+.shisha-list {
   list-style-type: none;
-  text-align: left;
+  text-align: center;
 }
 
-.menu-list-item {
-  padding-bottom: 1vh;
+.shisha-list-item {
+  padding-bottom: 1rem;
 }
 
-.menu-list-item:hover {
+.shisha-list-item:hover {
   color: var(--primaryColor);
+}
+
+/** contact us begin css*/
+
+.contact-us-container {
 }
