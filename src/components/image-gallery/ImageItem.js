@@ -1,7 +1,12 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 
-export default function ImageItem({ backgroundUrl, size, colSize }) {
+export default function ImageItem({
+  backgroundUrl,
+  size,
+  colSize,
+  onClickEvent,
+}) {
   return (
     <Col xs={12} md={colSize}>
       <div
@@ -9,6 +14,7 @@ export default function ImageItem({ backgroundUrl, size, colSize }) {
         style={{
           background: `url(${backgroundUrl}) center/cover no-repeat`,
         }}
+        onClick={onClickEvent}
       />
     </Col>
   );

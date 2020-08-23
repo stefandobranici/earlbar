@@ -14,4 +14,7 @@ export const homePageContent = {
   groupHangoutSectionTitle: "Perfect setting for a group hangout",
   groupHangoutSectionDescription:
     "Our welcoming atmosphere & delicious Shisha options create the perfect setting for a group hangout. Whether you are planning a night out with your group or want to cool off from a stressful day, we have you covered.",
+  ourEventsSectionTitle: "Our Events",
+  ourEventsSectionDescription:
+    "Find out more about our upcoming events by following us on Facebook and Instagram.",
 };

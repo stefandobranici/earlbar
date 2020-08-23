@@ -14,16 +14,24 @@ class ImageGallery extends Component {
 
   state = {
     visibleCarousel: false,
+    activeIndex: 0,
   };
 
-  handleToggle = () => {
-    this.setState({ visibleCarousel: !this.state.visibleCarousel });
+  handleToggle = (index) => {
+    this.setState({
+      visibleCarousel: !this.state.visibleCarousel,
+      activeIndex: index,
+    });
+  };
+
+  handleSelect = (selectedIndex, e) => {
+    this.setState({ activeIndex: selectedIndex });
   };
 
   render() {
     return (
       <div>
-        <Container fluid onClick={this.handleToggle}>
+        <Container fluid>
           <Row>
             {this.gallery.map((img, i) => {
               if (i % 11 === 0) {
@@ -32,6 +40,7 @@ class ImageGallery extends Component {
                     backgroundUrl={img}
                     size={this.columnSizes.l}
                     colSize={6}
+                    onClickEvent={() => this.handleToggle(i)}
                   />
                 );
               } else if (i % 11 === 1) {
@@ -40,6 +49,7 @@ class ImageGallery extends Component {
                     backgroundUrl={img}
                     size={this.columnSizes.l}
                     colSize={3}
+                    onClickEvent={() => this.handleToggle(i)}
                   />
                 );
               } else if (i % 11 === 2) {
@@ -48,6 +58,7 @@ class ImageGallery extends Component {
                     backgroundUrl={img}
                     size={this.columnSizes.l}
                     colSize={3}
+                    onClickEvent={() => this.handleToggle(i)}
                   />
                 );
               } else if (i % 11 === 3) {
@@ -56,6 +67,7 @@ class ImageGallery extends Component {
                     backgroundUrl={img}
                     size={this.columnSizes.l}
                     colSize={3}
+                    onClickEvent={() => this.handleToggle(i)}
                   />
                 );
               } else if (i % 11 === 4) {
@@ -64,6 +76,7 @@ class ImageGallery extends Component {
                     backgroundUrl={img}
                     size={this.columnSizes.l}
                     colSize={6}
+                    onClickEvent={() => this.handleToggle(i)}
                   />
                 );
               } else if (i % 11 === 5) {
@@ -72,6 +85,7 @@ class ImageGallery extends Component {
                     backgroundUrl={img}
                     size={this.columnSizes.l}
                     colSize={3}
+                    onClickEvent={() => this.handleToggle(i)}
                   />
                 );
               } else if (i % 11 === 6) {
@@ -80,6 +94,7 @@ class ImageGallery extends Component {
                     backgroundUrl={img}
                     size={this.columnSizes.l}
                     colSize={6}
+                    onClickEvent={() => this.handleToggle(i)}
                   />
                 );
               } else if (i % 11 === 7) {
@@ -88,6 +103,7 @@ class ImageGallery extends Component {
                     backgroundUrl={img}
                     size={this.columnSizes.l}
                     colSize={6}
+                    onClickEvent={() => this.handleToggle(i)}
                   />
                 );
               } else if (i % 11 === 8) {
@@ -96,6 +112,7 @@ class ImageGallery extends Component {
                     backgroundUrl={img}
                     size={this.columnSizes.l}
                     colSize={3}
+                    onClickEvent={() => this.handleToggle(i)}
                   />
                 );
               } else if (i % 11 === 9) {
@@ -104,6 +121,7 @@ class ImageGallery extends Component {
                     backgroundUrl={img}
                     size={this.columnSizes.l}
                     colSize={3}
+                    onClickEvent={() => this.handleToggle(i)}
                   />
                 );
               } else if (i % 11 === 10) {
@@ -112,6 +130,7 @@ class ImageGallery extends Component {
                     backgroundUrl={img}
                     size={this.columnSizes.l}
                     colSize={6}
+                    onClickEvent={() => this.handleToggle(i)}
                   />
                 );
               }
@@ -128,6 +147,8 @@ class ImageGallery extends Component {
         </Container>
         <div>
           <Carousel
+            activeIndex={this.state.activeIndex}
+            onSelect={this.handleSelect}
             className={
               this.state.visibleCarousel
                 ? "image-gallery-carousel-visibile"
@@ -151,7 +172,7 @@ class ImageGallery extends Component {
                 ? "button-close-visible"
                 : "button-close"
             }
-            onClick={this.handleToggle}
+            onClick={() => this.handleToggle(0)}
           />
         </div>
       </div>

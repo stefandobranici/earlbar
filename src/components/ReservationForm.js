@@ -9,7 +9,7 @@ export default function ReservationForm() {
         <Row className="justify-content-center reservation-form-row">
           <Col xs={5}>
             <Row>
-              <label>Date</label>
+              <label for="date">Date</label>
             </Row>
             <Row>
               <input type="date" name="date" />
@@ -17,7 +17,7 @@ export default function ReservationForm() {
           </Col>
           <Col xs={5}>
             <Row>
-              <label>Time</label>
+              <label for="time">Time</label>
             </Row>
             <Row>
               <input type="time" name="time" />
@@ -27,7 +27,7 @@ export default function ReservationForm() {
         <Row className="justify-content-center reservation-form-row">
           <Col xs={5}>
             <Row>
-              <label>Name</label>
+              <label for="name">Name</label>
             </Row>
             <Row>
               <input type="text" name="name" />
@@ -35,7 +35,7 @@ export default function ReservationForm() {
           </Col>
           <Col xs={5}>
             <Row>
-              <label>Phone</label>
+              <label for="phone">Phone</label>
             </Row>
             <Row>
               <input type="tel" name="phone" />
@@ -45,7 +45,7 @@ export default function ReservationForm() {
         <Row className="justify-content-center reservation-form-row">
           <Col xs={5}>
             <Row>
-              <label>E-mail</label>
+              <label for="email">E-mail</label>
             </Row>
             <Row>
               <input type="email" name="email" />
@@ -53,7 +53,7 @@ export default function ReservationForm() {
           </Col>
           <Col xs={5}>
             <Row>
-              <label>Number of guests</label>
+              <label for="howmany">Number of guests</label>
             </Row>
             <Row>
               <input type="number" name="howmany" defaultValue="How many" />
@@ -63,10 +63,10 @@ export default function ReservationForm() {
         <Row className="justify-content-center reservation-form-row">
           <Col xs={10}>
             <Row>
-              <label>Venue</label>
+              <labe for="venue">Venue</labe>
             </Row>
             <Row>
-              <select>
+              <select name="venue">
                 <option value="theearl">The Earl Cocktail Bar</option>
                 <option value="theterrace">The Terrace Hookah Bar</option>
               </select>
@@ -76,7 +76,7 @@ export default function ReservationForm() {
         <Row className="justify-content-center reservation-form-row">
           <Col xs={10}>
             <input type="checkbox" name="agree" />
-            <label>
+            <label for="agree">
               I agree that my submitted data is being collected and stored.
             </label>
           </Col>

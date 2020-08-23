@@ -585,12 +585,6 @@ reservation-form-row-select {
   background: url("https://lh3.googleusercontent.com/pw/ACtC-3eI-n0dQ4QwzLOWPSa9yez809eE9ffMffHDzFsx8IzlQcjyKBYeSUcrrZeSo2zcb3yHGQfMdW_3DUc8uPv60IWeMN4WbrTWdCB0qxNKeWQLu9ayxFY1Njq9UxNDFu2M9ixV979mFn5UsWFh57bMN2Pr=w2048-h1366-no?authuser=0")
     center/cover no-repeat;
   width: 100%;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .home-shisha-section-col {
@@ -600,34 +594,16 @@ reservation-form-row-select {
   margin-top: 15vh;
   margin-bottom: 15vh;
   color: var(--mainWhite);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .home-shisha-section-col h1 {
   padding-top: 3vh;
   font-size: 2rem;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 .home-shisha-section-col p {
   font-size: 1.5rem;
   white-space: pre-line;
   vertical-align: bottom;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .vertical-line-banner {
@@ -716,6 +692,31 @@ reservation-form-row-select {
   width: 100%;
   margin-top: 10vh;
   margin-bottom: 10vh;
+}
+
+.home-group-hangout-section {
+  background: url("https://lh3.googleusercontent.com/pw/ACtC-3fU3yTX6e85I3jbkDJkaOa7ryPyLcnViTFZUav5PtYYcNRQc5cohQOYjLjw1HCmskzptJGTHYz9YEOfgHdO5NdNw-fQbNKRtaU4kg07MHzypIIDLP88Ia4IdHTIjC9PrTuQrd8KmXEqA8Qo7TPR1f4k=w2560-h1209-no?authuser=0")
+    center/cover no-repeat;
+  width: 100%;
+}
+
+.home-group-hangout-section-col {
+  text-align: center;
+  background-color: rgba(34, 34, 34, 0.6);
+  height: 100%;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  color: var(--mainWhite);
+}
+
+.home-group-hangout-section-col h1 {
+  padding-top: 3vh;
+  font-size: 2rem;
+}
+.home-group-hangout-section-col p {
+  font-size: 1.5rem;
+  white-space: pre-line;
+  vertical-align: bottom;
 }
 
 /** contact us begin css*/

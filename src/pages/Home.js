@@ -9,6 +9,8 @@ import { GoLocation } from "react-icons/go";
 import ShishaMenu from "../components/ShishaMenu";
 import ImageGallery from "../components/image-gallery/ImageGallery";
 import { subGallery } from "../repository/gallery";
+import { FaFacebook } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 export const Home = () => {
   return (
@@ -109,6 +111,57 @@ export const Home = () => {
         <Row>
           <Col xs={12}>
             <ImageGallery gallery={subGallery} />
+          </Col>
+        </Row>
+      </Container>
+      <Container fluid className="home-group-hangout-section">
+        <Row className="justify-content-center">
+          <Col
+            xs={12}
+            md={10}
+            lg={8}
+            className="home-group-hangout-section-col"
+          >
+            <h1>{homePageContent.groupHangoutSectionTitle}</h1>
+            <div className="vertical-line-banner"></div>
+            <p>{homePageContent.groupHangoutSectionDescription}</p>
+          </Col>
+        </Row>
+      </Container>
+      <Container fluid className="home-gallery-section">
+        <Row className="justify-content-center">
+          <Col xs={12} md={10} lg={8} className="home-prices-section-col">
+            <h1>{homePageContent.ourEventsSectionTitle}</h1>
+            <div className="vertical-line-banner"></div>
+            <p>{homePageContent.ourEventsSectionDescription}</p>
+          </Col>
+        </Row>
+        <Row className="footer-inner-row">
+          <Col className="home-prices-section-col">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/bathshisha"
+            >
+              <FaFacebook
+                style={{ fontSize: "2rem", color: "rgb(34,34,34)" }}
+              />
+            </a>{" "}
+            Follow us on Facebook
+          </Col>
+        </Row>
+        <Row className="footer-inner-row">
+          <Col className="home-prices-section-col">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/the_terrace_bath/"
+            >
+              <AiFillInstagram
+                style={{ fontSize: "2rem", color: "rgb(34,34,34)" }}
+              />
+            </a>{" "}
+            Follow us on Instagram
           </Col>
         </Row>
       </Container>
