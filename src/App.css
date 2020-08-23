@@ -556,11 +556,9 @@ p {
 
 .reservation-form {
   background-color: rgb(34, 34, 34);
-
   color: var(--primaryColor);
   text-align: center;
   height: 650px;
-  margin-left: 10px;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -596,28 +594,36 @@ reservation-form-row-select {
   margin-top: 20px !important;
   margin-bottom: 20px !important;
 }
+
+.col-reservation-form {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
 /* end of reservation form css*/
 
 .home-shisha-section {
   background: url("https://lh3.googleusercontent.com/pw/ACtC-3eI-n0dQ4QwzLOWPSa9yez809eE9ffMffHDzFsx8IzlQcjyKBYeSUcrrZeSo2zcb3yHGQfMdW_3DUc8uPv60IWeMN4WbrTWdCB0qxNKeWQLu9ayxFY1Njq9UxNDFu2M9ixV979mFn5UsWFh57bMN2Pr=w2048-h1366-no?authuser=0")
     center/cover no-repeat;
   width: 100%;
-  height: 45vh;
 }
 
 .home-shisha-section-col {
   text-align: center;
   background-color: rgba(34, 34, 34, 0.6);
+  height: 100%;
   margin-top: 15vh;
+  margin-bottom: 15vh;
   color: var(--mainWhite);
 }
 
 .home-shisha-section-col h1 {
   padding-top: 3vh;
-  font-size: 2.5vh;
+  font-size: 2rem;
 }
 .home-shisha-section-col p {
-  font-size: 1.3vh;
+  font-size: 1.5rem;
+  white-space: pre-line;
+  vertical-align: bottom;
 }
 
 .vertical-line-banner {
@@ -630,62 +636,44 @@ reservation-form-row-select {
 
 .home-prices-section {
   width: 100%;
-  height: 60vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .home-prices-section-col {
   text-align: center;
-  margin-top: 5vh;
 }
 
 .home-prices-section-col h1 {
-  padding-top: 3vh;
-  font-size: 2.5vh;
+  font-size: 2rem;
 }
 .home-prices-section-col p {
-  font-size: 1.3vh;
+  font-size: 1.5rem;
   color: var(--mainBlack);
+  white-space: pre-line;
+  vertical-align: bottom;
 }
 
 .home-prices-section-col-drinks {
   text-align: center;
   background-color: var(--primaryColor);
-  margin-left: 1vw;
-  margin-right: 1vw;
-  height: 20vh;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .home-prices-section-col-drinks h1 {
-  font-size: 2vh;
-  padding-bottom: 1vh;
+  font-size: 1.5rem;
+  padding-bottom: 1.2vh;
 }
 
 .home-prices-section-col-drinks h3 {
   padding-top: 5vh;
-  font-size: 1.8vh;
+  font-size: 2rem;
 }
 
 .home-prices-section-col-drinks h6 {
   color: var(--darkGrey);
-  font-size: 1.5vh;
-}
-
-@media screen and (min-width: 1200px) {
-  .home-prices-section-col-drinks {
-    height: 23vh;
-  }
-
-  .home-prices-section-col-drinks h1 {
-    font-size: 3vh;
-  }
-
-  .home-prices-section-col-drinks h3 {
-    font-size: 2vh;
-  }
-
-  .home-prices-section-col-drinks h6 {
-    font-size: 1.5vh;
-  }
+  font-size: 1rem;
 }
 
 .home-menu-section {

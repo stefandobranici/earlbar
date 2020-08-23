@@ -13,15 +13,15 @@ export const Home = () => {
     <div>
       <Carousel />
       <Container fluid="lg" className="home-header">
-        <Row>
-          <Col md={12} lg={7}>
-            <Row>
+        <Row className="justify-content-center">
+          <Col xs={12} lg={7} className="justify-content-center">
+            <Row className="justify-content-center">
               <Col>
                 <h1>{homePageContent.mainHeaderTitle}</h1>
                 <LineBreak />
               </Col>
             </Row>
-            <Row>
+            <Row className="justify-content-center">
               <Col xs={7}>
                 <p>{homePageContent.mainHeaderDescription}</p>
               </Col>
@@ -29,8 +29,7 @@ export const Home = () => {
                 <Row>
                   <Col>
                     <h3>
-                      <AiOutlineFieldTime style={{ color: "#af9a7d" }} />{" "}
-                      Opening Time:
+                      <AiOutlineFieldTime style={{ color: "#af9a7d" }} /> When
                     </h3>
                     <h6>Monday - Thursday </h6>
                     <p>6PM - 12AM</p>
@@ -43,7 +42,7 @@ export const Home = () => {
                 <Row>
                   <Col>
                     <h3>
-                      <GoLocation style={{ color: "#af9a7d" }} /> Located:
+                      <GoLocation style={{ color: "#af9a7d" }} /> Where
                     </h3>
                     <h6>10 Manvers St Bath BA1 1JQ</h6>
                   </Col>
@@ -51,14 +50,19 @@ export const Home = () => {
               </Col>
             </Row>
           </Col>
-          <Col md={12} lg={5}>
-            <ReservationForm />
+          <Col
+            xs={12}
+            md={8}
+            lg={5}
+            className="justify-content-center col-reservation-form"
+          >
+            <ReservationForm className />
           </Col>
         </Row>
       </Container>
       <Container fluid className="home-shisha-section">
         <Row className="justify-content-center">
-          <Col xs={6} className="home-shisha-section-col">
+          <Col xs={12} md={10} lg={8} className="home-shisha-section-col">
             <h1>{homePageContent.shishaSectionTitle}</h1>
             <div className="vertical-line-banner"></div>
             <p>{homePageContent.shishaSectionDescription}</p>
@@ -67,24 +71,24 @@ export const Home = () => {
       </Container>
       <Container fluid className="home-prices-section">
         <Row className="justify-content-center">
-          <Col xs={6} className="home-prices-section-col">
+          <Col xs={12} md={10} lg={8} className="home-prices-section-col">
             <h1>{homePageContent.pricesSectionTitle}</h1>
             <div className="vertical-line-banner"></div>
             <p>{homePageContent.pricesSectionDescription}</p>
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs={3} lg={2} className="home-prices-section-col-drinks">
+          <Col xs={10} md={3} className="home-prices-section-col-drinks">
             <h3>Cocktails</h3>
             <h1>2 for £12</h1>
             <h6>1 for £7</h6>
           </Col>
-          <Col xs={3} lg={2} className="home-prices-section-col-drinks">
+          <Col xs={10} md={3} className="home-prices-section-col-drinks">
             <h3>Shooters</h3>
             <h1>5 for £12</h1>
             <h6>1 for £3</h6>
           </Col>
-          <Col xs={3} lg={2} className="home-prices-section-col-drinks">
+          <Col xs={10} md={3} className="home-prices-section-col-drinks">
             <h3>Hookah</h3>
             <h1>2 Flavours for £14</h1>
             <h6>More flavours at an extra cost</h6>
