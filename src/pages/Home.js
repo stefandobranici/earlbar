@@ -7,6 +7,8 @@ import ReservationForm from "../components/ReservationForm";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import ShishaMenu from "../components/ShishaMenu";
+import ImageGallery from "../components/image-gallery/ImageGallery";
+import { subGallery } from "../repository/gallery";
 
 export const Home = () => {
   return (
@@ -96,6 +98,20 @@ export const Home = () => {
         </Row>
       </Container>
       <ShishaMenu />
+      <Container fluid className="home-gallery-section">
+        <Row className="justify-content-center">
+          <Col xs={12} md={10} lg={8} className="home-prices-section-col">
+            <h1>{homePageContent.gallerySectionTitle}</h1>
+            <div className="vertical-line-banner"></div>
+            <p>{homePageContent.gallerySectionDescription}</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12}>
+            <ImageGallery gallery={subGallery} />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

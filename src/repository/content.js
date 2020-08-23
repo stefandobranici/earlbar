@@ -10,7 +10,7 @@ export const homePageContent = {
     "At the Earl and Terrace, we focus on giving you the best quality for the best price.\n\n Our drinks have specific prices but we have offers for buying two drinks or multiple shots/shooters. All of our shishas include free mouth tips and ice tray. We also provide natural coals upon request.",
   gallerySectionTitle: "Photo Gallery",
   gallerySectionDescription:
-    "A relaxing environment offering flavorful iced shishas, rich espresso and coffee, delicious teas, chill music, a fun and friendly staff and plenty of comfy couches to relax in. Smoke. Drink. Talk. Study. Lounge with us.",
+    "A relaxing environment offering flavorful iced shishas, rich espresso and coffee, delicious teas, chill music, a fun and friendly staff and plenty of comfy couches to relax in.\n\n\n Smoke. Drink. Talk. Study. Lounge with us.",
   groupHangoutSectionTitle: "Perfect setting for a group hangout",
   groupHangoutSectionDescription:
     "Our welcoming atmosphere & delicious Shisha options create the perfect setting for a group hangout. Whether you are planning a night out with your group or want to cool off from a stressful day, we have you covered.",

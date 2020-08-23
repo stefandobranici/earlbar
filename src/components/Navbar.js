@@ -1,21 +1,22 @@
 import React, { Component } from "react";
 import logo from "../images/earl-bar-logo.png";
 import { FaAlignRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
-export default class Navbar extends Component {
+class Navbar extends Component {
   pageNames = {
-    home: "Home",
-    theEarl: "The-Earl",
-    theTerrace: "The-Terrace",
-    gallery: "Gallery",
-    contactUs: "Contact-Us",
+    home: "/",
+    theEarl: "/the-earl/",
+    theTerrace: "/the-terrace/",
+    gallery: "/gallery/",
+    contactUs: "/contact-us/",
   };
 
   state = {
     isOpen: false,
-    currentActive: this.pageNames.home,
+    currentActive: window.location.pathname,
   };
+
   handleToggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
   };
@@ -115,3 +116,5 @@ export default class Navbar extends Component {
     );
   }
 }
+
+export default withRouter(Navbar);
