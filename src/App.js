@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import "./Carousel.scss";
 
 import Home from "./pages/Home.js";
 import TheEarl from "./pages/TheEarl.js";

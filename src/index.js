@@ -8,14 +8,6 @@ import store from "./redux/store";
 
 const rootElement = document.getElementById("root");
 
-fetch("http://localhost:5000/posts")
-  .then((result) => {
-    return result.json();
-  })
-  .then((data) => {
-    console.log(data);
-  });
-
 ReactDOM.render(
   <Provider store={store}>
     <Router>

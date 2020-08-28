@@ -3,6 +3,7 @@ import Slide from "./Slide";
 import { useSelector, useDispatch } from "react-redux";
 import slides from "../../repository/slides";
 import { useSwipeable } from "react-swipeable";
+import "./Carousel.scss";
 
 export default function Carousel() {
   const dispatch = useDispatch();
