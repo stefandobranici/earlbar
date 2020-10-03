@@ -20,3 +20,8 @@ export const subGallery = [
   "https://lh3.googleusercontent.com/pw/ACtC-3c2paLWVkiI71mGf_JYE88Un4qhNKNCXhHFUXx_CEOpXK3Mmt3iIePfDbF_FHpIkd_UQn5gn4mo9uaY0aG9IrAE5lYEELUcgouPjXx_7aLaouj9mNa7OMDwFu5l-a8px-yKOyIpoDAcDLxuIK3Ujog1=w2048-h1246-no?authuser=0",
   "https://lh3.googleusercontent.com/pw/ACtC-3e9RTTpQI3OYsZHSgeBI5MYdkdw2yVimMeJomJoRf9_7lrozw9K0Hyi6tVdxpRO_P9o7T6197fc3UTQngmmLGx5G0cAH5dRnMdyzxqETQqZPcVIztXsFfzHTyuEedsf9lk3HoC9tKqsSKotUpL_KNGe=w1322-h1947-no?authuser=0",
 ];
+
+export const backgroundImages = {
+  drinksMenu:
+    "https://lh3.googleusercontent.com/pw/ACtC-3divaGMT1Qbe5cWUJZ92z0F7FxTYzyE4Cr8Lqo-ny2fC8zGOMeuAVNbWEKPHL1OV5MpklRAQ1oAOtTRgm1NmAG4j14RQATALQSGrqox1vqe_jjAKCnDdRbyef9vIPQkqB0Seri6YT1H7c54kX6zeo8P=w2048-h1160-no?authuser=0",
+};

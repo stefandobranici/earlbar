@@ -3,7 +3,7 @@ import Carousel from "../components/carousel/Carousel";
 import { Container, Row, Col } from "react-bootstrap";
 import { homePageContent } from "../repository/content";
 import LineBreak from "../components/LineBreak";
-import ReservationForm from "../components/ReservationForm";
+import ReservationForm from "../components/reservation/ReservationForm";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import ShishaMenu from "../components/ShishaMenu";

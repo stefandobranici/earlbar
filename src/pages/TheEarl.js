@@ -1,6 +1,6 @@
 import React from "react";
 import DrinkMenu from "../components/drink-menu/DrinkMenu";
-import { drinksMenu } from "../repository/menu";
+import { drinksMenu } from "../repository/drinks-menu";
 import Banner from "../components/Banner";
 
 export const TheEarl = () => {

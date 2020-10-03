@@ -115,6 +115,7 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 /* end of globals */
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -272,138 +273,6 @@ h6 {
 }
 /* end of Title */
 
-/* services */
-.services {
-  padding: 5rem 0;
-}
-.services {
-  background: var(--darkGrey);
-  text-align: center;
-}
-.services-center {
-  width: 90vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 50px;
-}
-.service span {
-  display: inline-block;
-  color: var(--primaryColor);
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-.services h6 {
-  letter-spacing: var(--mainSpacing);
-}
-.services p {
-  width: 80%;
-  margin: 0 auto;
-}
-@media screen and (min-width: 992px) {
-  .services-center {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .services p {
-    width: 100%;
-  }
-}
-/*end of services */
-/* featured rooms */
-
-.featured-rooms {
-  padding: 5rem 0;
-}
-.featured-rooms-center {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 40px;
-}
-@media screen and (min-width: 776px) {
-  .featured-rooms-center {
-    width: 90vw;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  }
-}
-@media screen and (min-width: 992px) {
-  .featured-rooms-center {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
-/* end pf featured rooms */
-/* room */
-.room {
-  box-shadow: var(--lightShadow);
-  transition: var(--mainTransition);
-}
-.room:hover {
-  box-shadow: var(--darkShadow);
-}
-
-.img-container {
-  position: relative;
-}
-.img-container img {
-  width: 100%;
-  display: block;
-  transition: var(--mainTransition);
-}
-.price-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  color: var(--mainWhite);
-  padding: 0.3rem 0.6rem 0.5rem;
-  border-bottom-right-radius: 1rem;
-  font-size: 0.5rem;
-  text-align: center;
-  transition: var(--mainTransition);
-}
-.price-top h6 {
-  margin-bottom: 0;
-  font-size: 0.9rem;
-  font-weight: 300;
-  letter-spacing: var(--mainSpacing);
-}
-.room-link {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: scale(0);
-  transition: all 0.3s linear;
-}
-.img-container:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-.img-container:hover img {
-  opacity: 0.3;
-}
-.img-container:hover .price-top {
-  opacity: 0;
-}
-.img-container:hover .room-link {
-  transform: translate(-50%, -50%) scale(1);
-}
-.room-info {
-  background: var(--darkGrey);
-  text-transform: capitalize;
-  padding: 0.5rem 0;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: var(--mainSpacing);
-}
-/* end of room  */
-
 /* start of homeHeader css*/
 
 .home-header {
@@ -531,55 +400,6 @@ p {
   margin-bottom: 5%;
   border: 3px solid var(--primaryColor);
 }
-
-/* start of reservation form css*/
-
-.reservation-form {
-  background-color: rgb(34, 34, 34);
-  color: var(--primaryColor);
-  text-align: center;
-  height: 650px;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.reservation-form h2 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: rgb(49, 49, 49);
-  color: var(--primaryColor);
-}
-
-.reservation-form-row {
-  padding-bottom: 20px;
-}
-
-.reservation-form input {
-  width: 90%;
-  background-color: #af9a7d;
-  padding-top: 5px;
-}
-
-.reservation-form select {
-  padding-top: 5px;
-  width: 95%;
-  background-color: #af9a7d;
-}
-
-.reservation-form-input {
-  width: 100%;
-}
-
-reservation-form-row-select {
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-}
-
-.col-reservation-form {
-  padding-right: 0px !important;
-  padding-left: 0px !important;
-}
-/* end of reservation form css*/
 
 .home-shisha-section {
   background: url("https://lh3.googleusercontent.com/pw/ACtC-3eI-n0dQ4QwzLOWPSa9yez809eE9ffMffHDzFsx8IzlQcjyKBYeSUcrrZeSo2zcb3yHGQfMdW_3DUc8uPv60IWeMN4WbrTWdCB0qxNKeWQLu9ayxFY1Njq9UxNDFu2M9ixV979mFn5UsWFh57bMN2Pr=w2048-h1366-no?authuser=0")
