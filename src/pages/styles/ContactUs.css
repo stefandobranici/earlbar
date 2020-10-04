@@ -1,5 +1,20 @@
-.contact-us-container h3,
-h6,
-p {
-  color: var(--mainBlack) !important;
+.contact-information-col p {
+  text-align: left;
+  color: var(--mainBlack);
+  white-space: pre-line;
+  vertical-align: bottom;
+}
+
+.contact-information-col h3 {
+  text-align: left;
+  color: var(--mainBlack);
+  white-space: pre-line;
+  vertical-align: bottom;
+}
+
+.contact-information-col h6 {
+  text-align: left;
+  color: var(--mainBlack);
+  white-space: pre-line;
+  vertical-align: bottom;
 }

@@ -6,6 +6,7 @@ import { GoLocation } from "react-icons/go";
 import ReservationForm from "../components/form/reservation/ReservationForm";
 import ContactForm from "../components/form/contact/ContactForm";
 import Banner from "../components/layout/banner/Banner";
+import LineBreak from "../components/layout/linebreak/LineBreak";
 
 import "./styles/ContactUs.css";
 
@@ -21,7 +22,7 @@ export const ContactUs = () => {
       <Row className="justify-content-center">
         <Col xs={12} md={3}>
           <Row>
-            <Col>
+            <Col className="contact-information-col">
               <h3>
                 <AiOutlineFieldTime style={{ color: "#af9a7d" }} /> When
               </h3>
@@ -46,10 +47,10 @@ export const ContactUs = () => {
           <ReservationForm />
         </Col>
       </Row>
-      <Row
-        className="justify-content-center"
-        style={{ marginTop: "50px", marginBottom: "50px" }}
-      >
+      <Row className="justify-content-center">
+        <LineBreak />
+      </Row>
+      <Row className="justify-content-center" style={{ marginBottom: "50px" }}>
         <Col xs={12} md={6}>
           <ContactForm />
         </Col>
