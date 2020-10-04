@@ -60,9 +60,7 @@ export default function Footer() {
           </Row>
         </Col>
       </Row>
-      <Row className="justify-content-center footer-row">
-        <h1>Nordevs Copyright © 2020 All rights reserved.</h1>
-      </Row>
+      <Row className="justify-content-center footer-row"></Row>
     </Container>
   );
 }

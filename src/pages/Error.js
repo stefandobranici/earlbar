@@ -1,24 +1,15 @@
 import React from "react";
 import Banner from "../components/layout/banner/Banner";
-import { useHistory } from "react-router-dom";
 
 export default function Error() {
-  const history = useHistory();
-
-  const goToBooking = () => {
-    history.push("/");
-  };
-
   return (
     <Banner title="404" subtitle="page not found">
-      <button
-        type="button"
-        className="btn-primary-main"
-        onClick={() => goToBooking}
-      >
-        Return Home
-      </button>
-      <div style={{ height: "23vh", backgroundColor: "white" }} />
+      <a href="/home">
+        <button type="button" className="btn-primary-main">
+          Return Home
+        </button>
+      </a>
+      <div style={{ height: "24vh", backgroundColor: "white" }} />
     </Banner>
   );
 }

@@ -1,9 +1,13 @@
 import React from "react";
-import ReservationForm from "../components/form/reservation/ReservationForm";
 import { Container, Row, Col } from "react-bootstrap";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
+
+import ReservationForm from "../components/form/reservation/ReservationForm";
+import ContactForm from "../components/form/contact/ContactForm";
 import Banner from "../components/layout/banner/Banner";
+
+import "./styles/ContactUs.css";
 
 export const ContactUs = () => {
   return (
@@ -15,7 +19,7 @@ export const ContactUs = () => {
         />
       </Row>
       <Row className="justify-content-center">
-        <Col xs={12} lg={6}>
+        <Col xs={12} md={3}>
           <Row>
             <Col>
               <h3>
@@ -38,8 +42,16 @@ export const ContactUs = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={12} md={10} lg={6}>
+        <Col xs={12} md={3}>
           <ReservationForm />
+        </Col>
+      </Row>
+      <Row
+        className="justify-content-center"
+        style={{ marginTop: "50px", marginBottom: "50px" }}
+      >
+        <Col xs={12} md={6}>
+          <ContactForm />
         </Col>
       </Row>
     </Container>

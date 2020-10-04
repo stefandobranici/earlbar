@@ -1,0 +1,5 @@
+.contact-us-container h3,
+h6,
+p {
+  color: var(--mainBlack) !important;
+}
