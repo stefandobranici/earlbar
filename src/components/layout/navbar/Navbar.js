@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-import logo from "../images/earl-bar-logo.png";
 import { FaAlignRight } from "react-icons/fa";
 import { Link, withRouter } from "react-router-dom";
 
+import logo from "../../../images/logos/earl-bar-logo.png";
+
+import "./Navbar.css";
+
 class Navbar extends Component {
   pageNames = {
-    home: "/",
+    home: "/home",
     theEarl: "/the-earl/",
     theTerrace: "/the-terrace/",
     gallery: "/gallery/",
@@ -52,7 +55,7 @@ class Navbar extends Component {
                     ? "nav-links-li-active"
                     : null
                 }
-                to="/"
+                to="/home"
                 onClick={() => this.swapPage(this.pageNames.home)}
               >
                 Home

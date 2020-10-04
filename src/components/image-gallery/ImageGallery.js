@@ -3,6 +3,8 @@ import { Container, Row, Carousel } from "react-bootstrap";
 import ImageItem from "./ImageItem";
 import { AiFillCloseCircle } from "react-icons/ai";
 
+import "./ImageGallery.css";
+
 class ImageGallery extends Component {
   columnSizes = {
     l: "image-gallery-item-l",

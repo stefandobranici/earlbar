@@ -1,7 +1,9 @@
 import React from "react";
-import DrinkMenu from "../components/drink-menu/DrinkMenu";
+
 import { drinksMenu } from "../repository/drinks-menu";
-import Banner from "../components/Banner";
+
+import DrinkMenu from "../components/menu/drinks/DrinkMenu";
+import Banner from "../components/layout/banner/Banner";
 
 export const TheEarl = () => {
   return (

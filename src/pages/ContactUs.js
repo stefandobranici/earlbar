@@ -1,9 +1,9 @@
 import React from "react";
-import ReservationForm from "../components/ReservationForm";
+import ReservationForm from "../components/form/reservation/ReservationForm";
 import { Container, Row, Col } from "react-bootstrap";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
-import Banner from "../components/Banner";
+import Banner from "../components/layout/banner/Banner";
 
 export const ContactUs = () => {
   return (

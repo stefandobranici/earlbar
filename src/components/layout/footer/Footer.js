@@ -4,6 +4,8 @@ import { AiFillInstagram } from "react-icons/ai";
 import { MdLocalPhone, MdEmail } from "react-icons/md";
 import { Container, Row, Col } from "react-bootstrap";
 
+import "./Footer.css";
+
 export default function Footer() {
   return (
     <Container fluid className="footer">

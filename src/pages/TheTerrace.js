@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../components/Banner";
-import ShishaMenu from "../components/ShishaMenu";
+import Banner from "../components/layout/banner/Banner";
+import ShishaMenu from "../components/menu/shishas/ShishaMenu";
 
 export const TheTerrace = () => {
   return (

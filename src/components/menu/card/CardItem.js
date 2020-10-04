@@ -9,20 +9,18 @@ export default function CardItem({ item }) {
         <Card.Img variant="top" src={item.imgSrc} />
         <Row>
           <Col xs="12">
-            <h3>
-              {item.name}
-              {/* {item.price + "£"} */}
-            </h3>
+            <h3>{item.name}</h3>
+            <p>{item.price + " £"}</p>
             <hr />
           </Col>
         </Row>
         <Row>
           <Col xs="12">
-            <p>
-              {item.ingredients.map((el, i) =>
-                i < item.ingredients.length - 1 ? el + ", " : el
-              )}
-            </p>
+            <ul>
+              {item.ingredients.map((el, i) => (
+                <li className="card-ingredient-item">{el}</li>
+              ))}
+            </ul>
           </Col>
         </Row>
       </Card>

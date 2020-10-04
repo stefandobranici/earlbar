@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../components/Banner";
+import Banner from "../components/layout/banner/Banner";
 import ImageGallery from "../components/image-gallery/ImageGallery";
 import { gallery } from "../repository/gallery";
 

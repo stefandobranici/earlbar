@@ -224,25 +224,34 @@ const ThePinkSaintCocktail = {
 
 /* Shooters List */
 
-const SquashedFrogShooter = {
-  name: "Squashed Frog",
-  ingredients: ["Midori", "Baileys", "Grenadine"],
-  price: 3,
+const SambucaShot = {
+  name: "Sambuca",
+  ingredients: ["Sambuca"],
+  price: "3.00",
+  imgSrc:
+    "https://lh3.googleusercontent.com/pw/ACtC-3d4PUvAs0WSoVjY9SeieY36Uoy23hOW_XDIyH0MjPwM5b59dA-a-Ap6riZKkwRWThgklZrkuOGChnVKorTkpJ73dvBfgmBlDCoPPVrdx6H_A4W_kFSmOyf-oEp5Xl9ZlEOWv4uxx5qpbe-MaVKZ7-fs=s515-no?authuser=0",
 };
-const CowboyShooter = {
-  name: "Cowboy",
-  ingredients: ["Butterscotch schnapps", "Baileys"],
-  price: 3,
+const TequilaShot = {
+  name: "Tequila",
+  ingredients: ["Tequila"],
+  price: "3.00",
+  imgSrc:
+    "https://lh3.googleusercontent.com/pw/ACtC-3d4PUvAs0WSoVjY9SeieY36Uoy23hOW_XDIyH0MjPwM5b59dA-a-Ap6riZKkwRWThgklZrkuOGChnVKorTkpJ73dvBfgmBlDCoPPVrdx6H_A4W_kFSmOyf-oEp5Xl9ZlEOWv4uxx5qpbe-MaVKZ7-fs=s515-no?authuser=0",
 };
-const StrawberryKissShooter = {
-  name: "Strawberry Kiss",
-  ingredients: ["Amaretto", "Tequila Rose"],
-  price: 3,
+const SkittleBombsShot = {
+  name: "Skittle Bombs",
+  ingredients: [],
+  price: "3.00",
+  imgSrc:
+    "https://lh3.googleusercontent.com/pw/ACtC-3d4PUvAs0WSoVjY9SeieY36Uoy23hOW_XDIyH0MjPwM5b59dA-a-Ap6riZKkwRWThgklZrkuOGChnVKorTkpJ73dvBfgmBlDCoPPVrdx6H_A4W_kFSmOyf-oEp5Xl9ZlEOWv4uxx5qpbe-MaVKZ7-fs=s515-no?authuser=0",
 };
-const SkittleSlamShooter = {
-  name: "Skittle Slam/J-Slam",
-  ingredients: ["Jung-Frau/Triple Sec"],
-  price: 3,
+
+const JagerShot = {
+  name: "Jager",
+  ingredients: ["Jager"],
+  price: "3.00",
+  imgSrc:
+    "https://lh3.googleusercontent.com/pw/ACtC-3d4PUvAs0WSoVjY9SeieY36Uoy23hOW_XDIyH0MjPwM5b59dA-a-Ap6riZKkwRWThgklZrkuOGChnVKorTkpJ73dvBfgmBlDCoPPVrdx6H_A4W_kFSmOyf-oEp5Xl9ZlEOWv4uxx5qpbe-MaVKZ7-fs=s515-no?authuser=0",
 };
 
 /* Shooters List END */
@@ -258,7 +267,7 @@ const GT1 = {
     "Lemon",
     "Orange Tonic",
   ],
-  price: 7,
+  price: "7.00",
 };
 
 const GT2 = {
@@ -270,13 +279,13 @@ const GT2 = {
     "Watermelon",
     "Cucumber Tonic",
   ],
-  price: 7,
+  price: "7.00",
 };
 
 const GT3 = {
   name: "GT3",
   ingredients: ["Beefeater Pink", "Strawberry", "Lime", "Tonic"],
-  price: 7,
+  price: "7.00",
 };
 
 const GT4 = {
@@ -288,7 +297,7 @@ const GT4 = {
     "Lemon",
     "Lemon Tonic",
   ],
-  price: 7,
+  price: "7.00",
 };
 
 const GT5 = {
@@ -297,16 +306,15 @@ const GT5 = {
     "Pink Grapefruit Gin",
     "Grapefruit",
     "Rosemary",
-    "Pink Grapefruit",
-    "Tonic",
+    "Pink Grapefruit Tonic",
   ],
-  price: 7,
+  price: "7.00",
 };
 
 const GT6 = {
   name: "GT6",
   ingredients: ["Tanqueray 10", "Orange", "Pink Grapefruit", "Tonic"],
-  price: 7,
+  price: "7.00",
 };
 
 /* G&T List END */
@@ -343,12 +351,7 @@ export const drinksMenu = [
   {
     type: "Shots",
     deal: "One for 3 £, Any Five for 12 £",
-    submenu: [
-      SquashedFrogShooter,
-      CowboyShooter,
-      StrawberryKissShooter,
-      SkittleSlamShooter,
-    ],
+    submenu: [SambucaShot, TequilaShot, SkittleBombsShot, JagerShot],
   },
   {
     type: "Tequila Sharer Board",
@@ -379,7 +382,7 @@ export const drinksMenu = [
   },
   {
     type: "G&T Bar",
-    deal: "2 for 12",
+    deal: "One for 7 £, Any Two for 13 £",
     submenu: [GT1, GT2, GT3, GT4, GT5, GT6],
   },
 ];

@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./VisitUs.css";
+
 export default function VisitUs() {
   return (
     <div className="visit-us-container">
