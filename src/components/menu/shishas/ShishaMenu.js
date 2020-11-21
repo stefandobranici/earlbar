@@ -14,7 +14,7 @@ export default function ShishaMenu() {
             <GiBottleVapors style={{ color: "#af9a7d" }} /> Premium Shisha
             Flavours
           </h1>
-          <h3>Any Two for 25 £</h3>
+          <h3>Any Two for £26.50 . Extra coal at £5 for 3 coals. </h3>
           <div className="vertical-line-banner"></div>
           <Row className="justify-content-center">
             <Col xs={6} md={4}>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
+import { Link, withRouter } from "react-router-dom";
 
 import earlLogo from "../images/logos/earllogo.png";
 import secondBridgeLogo from "../images/logos/sblogo.png";
@@ -15,9 +16,9 @@ export const Landing = () => {
             <Row className="justify-content-center">
               <Col xs={"auto"}>
                 <div className="logoWrapper">
-                  <a href="/home">
+                  <Link to="/home">
                     <Image className="logo" src={earlLogo} />
-                  </a>
+                  </Link>
                 </div>
               </Col>
             </Row>
@@ -56,4 +57,4 @@ export const Landing = () => {
   );
 };
 
-export default Landing;
+export default withRouter(Landing);

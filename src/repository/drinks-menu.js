@@ -322,7 +322,7 @@ const GT6 = {
 export const drinksMenu = [
   {
     type: "Cocktails",
-    deal: "One for 7 £, Any Two for 13 £",
+    deal: "One for £7, Any Two for £13",
     submenu: [
       MojitoCocktail,
       BerryMojitoCocktail,
@@ -340,7 +340,7 @@ export const drinksMenu = [
   },
   {
     type: "Cocktail Special",
-    deal: "One for 7 £, Any Two for 12 £",
+    deal: "One for £7, Any Two for £12",
     submenu: [MyNameIsEarlCocktail],
   },
   {
@@ -350,12 +350,12 @@ export const drinksMenu = [
   },
   {
     type: "Shots",
-    deal: "One for 3 £, Any Five for 12 £",
+    deal: "One for £3, Any Five for £12",
     submenu: [SambucaShot, TequilaShot, SkittleBombsShot, JagerShot],
   },
   {
     type: "Tequila Sharer Board",
-    deal: "Any Three Tequila Shots for 12 £",
+    deal: "Any Three Tequila Shots for £12",
     submenu: [
       {
         name: "Tequila Taster Board",
@@ -382,7 +382,7 @@ export const drinksMenu = [
   },
   {
     type: "G&T Bar",
-    deal: "One for 7 £, Any Two for 13 £",
+    deal: "One for £7, Any Two for £13",
     submenu: [GT1, GT2, GT3, GT4, GT5, GT6],
   },
 ];

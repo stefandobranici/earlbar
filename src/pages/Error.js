@@ -1,15 +1,19 @@
 import React from "react";
+import { Link, withRouter } from "react-router-dom";
+
 import Banner from "../components/layout/banner/Banner";
 
-export default function Error() {
+export const Error = () => {
   return (
     <Banner title="404" subtitle="page not found">
-      <a href="/home">
+      <Link to="/home">
         <button type="button" className="btn-primary-main">
           Return Home
         </button>
-      </a>
+      </Link>
       <div style={{ height: "24vh", backgroundColor: "white" }} />
     </Banner>
   );
-}
+};
+
+export default withRouter(Error);

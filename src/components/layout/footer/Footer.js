@@ -33,7 +33,7 @@ export default function Footer() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.instagram.com/the_terrace_bath/"
+                href="https://www.instagram.com/explore/locations/520782010/the-earl-cocktail-bar-in-bath/"
               >
                 <AiFillInstagram
                   style={{ fontSize: "2rem", color: "rgb(34,34,34)" }}
@@ -55,7 +55,7 @@ export default function Footer() {
           <Row className="footer-inner-row">
             <Col>
               <MdEmail style={{ fontSize: "2rem", color: "rgb(34,34,34)" }} />{" "}
-              bella@earlbar.co.uk
+              admin@secondbridge.co.uk
             </Col>
           </Row>
         </Col>

@@ -10,7 +10,7 @@ export default function CardItem({ item }) {
         <Row>
           <Col xs="12">
             <h3>{item.name}</h3>
-            <p>{item.price + " £"}</p>
+            <p>{"£ " + item.price}</p>
             <hr />
           </Col>
         </Row>

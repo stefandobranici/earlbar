@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 
-import ReservationForm from "../components/form/reservation/ReservationForm";
 import ContactForm from "../components/form/contact/ContactForm";
 import Banner from "../components/layout/banner/Banner";
 import LineBreak from "../components/layout/linebreak/LineBreak";
@@ -26,12 +25,10 @@ export const ContactUs = () => {
               <h3>
                 <AiOutlineFieldTime style={{ color: "#af9a7d" }} /> When
               </h3>
-              <h6>Monday - Thursday </h6>
-              <p>6PM - 12AM</p>
-              <h6>Friday</h6>
-              <p>6PM - 1AM</p>
+              <h6>Wednesday - Friday </h6>
+              <p>18:00 - 22:00</p>
               <h6>Saturday</h6>
-              <p>12PM - 2AM</p>
+              <p>12:00 - 22:00</p>
             </Col>
           </Row>
           <Row>
@@ -44,16 +41,11 @@ export const ContactUs = () => {
           </Row>
         </Col>
         <Col xs={12} md={3}>
-          <ReservationForm />
+          <ContactForm />
         </Col>
       </Row>
       <Row className="justify-content-center">
         <LineBreak />
-      </Row>
-      <Row className="justify-content-center" style={{ marginBottom: "50px" }}>
-        <Col xs={12} md={6}>
-          <ContactForm />
-        </Col>
       </Row>
     </Container>
   );

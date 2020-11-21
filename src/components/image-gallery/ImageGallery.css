@@ -34,6 +34,7 @@
   height: 80%;
   top: calc(10%);
   bottom: calc(10%);
+  right: calc(5%);
   align-content: center;
 }
 
@@ -58,12 +59,12 @@
 }
 
 .button-close-visible {
-  color: var(--mainWhite);
+  color: var(--primaryColor);
   font-size: 3rem;
   position: fixed;
   z-index: 91;
   top: calc(20%);
-  right: calc(5%);
+  right: calc(10%);
 }
 
 .button-close-visible:hover {

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link, withRouter } from "react-router-dom";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { FaFacebook } from "react-icons/fa";
@@ -9,7 +10,7 @@ import Carousel from "../components/carousel/Carousel";
 import ShishaMenu from "../components/menu/shishas/ShishaMenu";
 import ImageGallery from "../components/image-gallery/ImageGallery";
 import LineBreak from "../components/layout/linebreak/LineBreak";
-import ReservationForm from "../components/form/reservation/ReservationForm";
+import ContactForm from "../components/form/contact/ContactForm";
 
 import { homePageContent } from "../repository/content";
 import { subGallery } from "../repository/gallery";
@@ -52,12 +53,10 @@ const Header = () => {
                   <h3>
                     <AiOutlineFieldTime style={{ color: "#af9a7d" }} /> When
                   </h3>
-                  <h6>Monday - Thursday </h6>
-                  <p>6PM - 12AM</p>
-                  <h6>Friday</h6>
-                  <p>6PM - 1AM</p>
+                  <h6>Wednesday - Friday </h6>
+                  <p>18:00 - 22:00</p>
                   <h6>Saturday</h6>
-                  <p>12PM - 2AM</p>
+                  <p>12:00 - 22:00</p>
                 </Col>
               </Row>
               <Row>
@@ -77,7 +76,7 @@ const Header = () => {
           lg={5}
           className="justify-content-center col-reservation-form"
         >
-          <ReservationForm className />
+          <ContactForm />
         </Col>
       </Row>
     </Container>
@@ -92,11 +91,11 @@ const ShishaSection = () => {
           <h1>{homePageContent.shishaSectionTitle}</h1>
           <div className="vertical-line-banner"></div>
           <p>{homePageContent.shishaSectionDescription}</p>
-          <a href="/the-terrace/">
+          <Link to="/the-terrace/">
             <button type="button" className="btn-primary-main">
               Our Flavours
             </button>
-          </a>
+          </Link>
         </Col>
       </Row>
     </Container>
@@ -132,11 +131,11 @@ const PricesSection = () => {
       </Row>
       <Row className="justify-content-center">
         <Col xs={"auto"} className="prices-section-button">
-          <a href="/the-earl/">
+          <Link to="/the-earl/">
             <button type="button" className="btn-primary-main">
               Drinks Menu
             </button>
-          </a>
+          </Link>
         </Col>
       </Row>
     </Container>
@@ -155,11 +154,11 @@ const PhotoGallerySection = () => {
       </Row>
       <Row className="justify-content-center">
         <Col xs={"auto"} className="home-gallery-section-button">
-          <a href="/gallery/">
+          <Link to="/gallery/">
             <button type="button" className="btn-primary-main">
               Gallery
             </button>
-          </a>
+          </Link>
         </Col>
       </Row>
       <Row>
@@ -212,7 +211,7 @@ const EventsSection = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.instagram.com/the_terrace_bath/"
+            href="https://www.instagram.com/explore/locations/520782010/the-earl-cocktail-bar-in-bath/"
           >
             <AiFillInstagram
               style={{ fontSize: "2rem", color: "rgb(34,34,34)" }}
@@ -225,4 +224,4 @@ const EventsSection = () => {
   );
 };
 
-export default Home;
+export default withRouter(Home);
